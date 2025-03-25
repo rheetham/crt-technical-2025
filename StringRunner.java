@@ -3,7 +3,8 @@ public class StringRunner {
         int arr[] = { 1, 3, 4 };
         System.out.println(arr.length);
 
-        String daysOfWeek[] = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+        String daysOfWeek[] = { "Sunday", "Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday", "Saturday" };
         String dayWithMostCharacters = "";
 
         for (String day : daysOfWeek) {
@@ -12,7 +13,8 @@ public class StringRunner {
             }
         }
 
-        System.out.println("Day with Most number of characters " + dayWithMostCharacters);
+        System.out.println("Day with Most number of characters " +
+                dayWithMostCharacters);
 
         for (int i = daysOfWeek.length - 1; i >= 0; i--) {
             System.out.println(daysOfWeek[i]);
