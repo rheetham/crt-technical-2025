@@ -10,7 +10,7 @@ class MotorBike {
     }
 
     public int getSpeed() {
-        return speed;
+        return this.speed;
     }
 
     public void setSpeed(int speed) {
