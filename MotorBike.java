@@ -33,5 +33,6 @@ class MotorBike {
 
     public static void main(String args[]) {
         MotorBike bike = new MotorBike();
+        bike.start();
     }
 }
