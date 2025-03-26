@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class SaddlePoint {
-    static boolean isSaddle(int[][] matrix, int row, int col, int key) {
+    static boolean isSaddle(int[][] matrix, int row, int col) {
         int curMax = Integer.MIN_VALUE;
         int curMin = Integer.MAX_VALUE;
 
@@ -20,7 +20,7 @@ public class SaddlePoint {
             }
         }
 
-        if (key == curMax && key == curMin)
+        if (curMax == curMin)
             return true;
         return false;
     }
@@ -31,7 +31,7 @@ public class SaddlePoint {
 
         for (int i = 0; i < nat.length; i++) {
             for (int j = 0; j < nat[0].length; j++) {
-                if (isSaddle(nat, i, j, nat[i][j])) {
+                if (isSaddle(nat, i, j)) {
                     saddles.add(nat[i][j]);
                 }
             }
