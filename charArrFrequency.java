@@ -14,7 +14,7 @@ class charArrFrequency {
         }
 
         for (int i = 0; i < s.length(); ++i) {
-            if (str[i] > 0) {
+            if (str[i] > 0 && str[i] != ' ') {
                 System.out.println(str[i] + " = " + freq[i]);
             }
         }
