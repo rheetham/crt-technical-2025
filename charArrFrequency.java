@@ -20,6 +20,10 @@ class charArrFrequency {
         }
     }
 
+    /*
+     * We can use the ASCII indexing method if the String will only contain
+     * alphabets.
+     */
     public static void main(String[] args) {
         frequency("helloworld");
     }
