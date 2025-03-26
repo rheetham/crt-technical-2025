@@ -18,5 +18,4 @@ public class CharLowest {
         }
         System.out.println(lowChar + " " + lowest);
     }
-
 }
