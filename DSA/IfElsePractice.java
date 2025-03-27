@@ -24,5 +24,4 @@ class IfElsePractice {
             System.out.println("Is FizzBuzz");
         }
     }
-
 }
