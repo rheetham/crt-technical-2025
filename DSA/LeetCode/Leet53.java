@@ -1,5 +1,5 @@
 class Leet53 {
-    public int maxSubArray(int[] nums) {
+    static int maxSubArray(int[] nums) {
         int max = nums[0];
         int sum = 0;
 
@@ -16,9 +16,12 @@ class Leet53 {
                 sum = 0;
             }
         }
+
         return max;
     }
 
     public static void main(String[] args) {
+        int arr[] = { 1, 2, -3, 2, 3, -1, 6, 1 };
+        System.out.println(maxSubArray(arr));
     }
 }
