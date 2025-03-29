@@ -4,17 +4,12 @@ class InsertionSort {
     // keep swapping if previous elements are bigger
 
     static void sort(int arr[]) {
-        for (int i = 1; i < arr.length; ++i) {
-            if (arr[i - 1] < arr[i])
-                continue;
-
-            int key = i;
-            for (int j = i - 1; j >= 0; --j) {
-                if (arr[j] > arr[key]) {
+        for (int i = 0; i < arr.length - 1; ++i) {
+            for (int j = i + 1; j > 0; --j) {
+                if (arr[j] < arr[j - 1]) {
                     int temp = arr[j];
-                    arr[j] = arr[key];
-                    arr[key] = temp;
-                    key--;
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
                 }
             }
         }
