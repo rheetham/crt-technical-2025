@@ -1,10 +1,8 @@
-public class StringRunner {
+class StringRunner {
     public static void main(String args[]) {
-        int arr[] = { 1, 3, 4 };
-        System.out.println(arr.length);
-
         String daysOfWeek[] = { "Sunday", "Monday", "Tuesday", "Wednesday",
                 "Thursday", "Friday", "Saturday" };
+
         String dayWithMostCharacters = "";
 
         for (String day : daysOfWeek) {
