@@ -32,6 +32,15 @@ class MyArrayList {
         arr = newArr;
     }
 
+    public boolean contains(Object obj) {
+        for (int i = 0; i < size; ++i) {
+            if (arr[i].equals(obj)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void display() {
         for (int i = 0; i < size; i++) {
             System.out.println(arr[i]);
