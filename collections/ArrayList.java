@@ -1,9 +1,9 @@
-class MyArrayList {
+public class ArrayList {
     private Object arr[];
     private static final int DEFAULT_CAPACITY = 10;
     private int size;
 
-    MyArrayList() {
+    ArrayList() {
         arr = new Object[DEFAULT_CAPACITY];
         size = 0;
     }
@@ -57,17 +57,5 @@ class MyArrayList {
         }
 
         arr = newArr;
-    }
-}
-
-class ArrayListImplementation {
-    public static void main(String[] args) {
-        MyArrayList list = new MyArrayList();
-
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(1, 69);
-        list.display();
     }
 }
