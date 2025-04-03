@@ -20,15 +20,17 @@ class MyArrayList {
             resize();
         }
 
-        Object newArr[] = new Object[size++];
+        size++;
+        Object newArr[] = new Object[arr.length];
 
-        for (int i = 0, j = 0; i < size; ++i) {
-            if (i == index && index >= 0 && index <= size) {
-                newArr[j++] = obj;
-                continue;
+        for (int i = 0, j = 0; i < arr.length; ++i) {
+            if (i == index) {
+                newArr[i] = obj;
+            } else {
+                newArr[i] = arr[j++];
             }
-            newArr[i] = arr[j++];
         }
+
         arr = newArr;
     }
 
@@ -65,7 +67,7 @@ class ArrayListImplementation {
         list.add(1);
         list.add(2);
         list.add(3);
-        list.add(2, 0);
+        list.add(1, 69);
         list.display();
     }
 }
